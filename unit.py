@@ -102,7 +102,7 @@ class BaseUnit(ABC):
         и уже эта функция вернем нам строку, которая характеризует выполнение умения
         """
         if self._is_skill_used:
-            return "Навык использован"
+            return "Навык был уже использован"
         else:
             if self.unit_class.skill._is_stamina_enough:
                 self._is_skill_used = True

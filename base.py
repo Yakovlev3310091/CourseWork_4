@@ -63,9 +63,7 @@ class Arena(metaclass=BaseSingleton):
         if result:
             return result
         self._stamina_regeneration()
-        self.enemy.hit(self.player)
         return self.enemy.hit(self.player)
-
 
     def _end_game(self):
         # TODO КНОПКА ЗАВЕРШЕНИЕ ИГРЫ - > return result: str
